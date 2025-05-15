@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+
+	<link rel="stylesheet" href="style.css">
+
+	<title>Admin Dashboard</title>
+</head>
+<style>
+    
+</style>
+<body>
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text">Admin</span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard' ></i>
+					<span class="text">Dashboard</span>
+				</a>
+			</li>
+			<li>
+				<a href="Food.html">
+					<i class='bx bxs-shopping-bag-alt' ></i>
+					<span class="text">Food</span>
+				</a>
+			</li>
+			<li>
+				<a href="index.html">
+					<i class='bx bxs-doughnut-chart' ></i>
+					<span class="text">Orders</span>
+				</a>
+			</li>
+		</ul>
+		<ul class="side-menu">
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog' ></i>
+					<span class="text">Settings</span>
+				</a>
+			</li>
+			<li>
+				<a href="#" class="logout">
+					<i class='bx bxs-log-out-circle' ></i>
+					<span class="text">Logout</span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<section id="content">
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<a href="#" class="nav-link">Categories</a>
+			<form action="#">
+				<div class="form-input">
+					<input type="search" placeholder="Search...">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			
+			<a href="#" class="profile">
+				<img src="img/pema.jpg">
+			</a>
+		</nav>
+
+		<main>
+			<div class="head-title">
+				<div class="left">
+					<h1>Food Section</h1>
+				</div>
+			</div>
+
+			<ul class="box-info">
+				<li>
+					<i class='bx bxs-calendar-check' ></i>
+					<span class="text">
+						<!-- <h3>20</h3> -->
+						<p>New Order</p>
+					</span>
+				</li>
+				<li>
+					<i class='bx bxs-group' ></i>
+					<span class="text">
+						<!-- <h3>200</h3> -->
+						<p>Visitors</p>
+					</span>
+				</li>
+				<!-- <li>
+					<i class='bx bxs-dollar-circle' ></i>
+					<span class="text">
+						<h3>Nu: 10000/-</h3>
+						<p>Total Sales</p>
+					</span>
+				</li> -->
+			</ul>
+
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3>Add Food</h3>
+						<i class='bx bx-search' ></i>
+					</div>
+                    <label for="img">Select image:</label>
+                    <input type="file" id="img" name="img" accept="image/*"><br><br><br>
+
+                    <label for="text">Food Name: </label>
+                    <input type="text" class="Name" class="f_input"><br><br><br>
+
+                    <label for="text">Food Description: </label>
+                    <input type="text" class="Name" class="f_input"><br><br><br>
+
+                    <label for="text">Amount: </label>
+                    <input type="text" class="Name" class="f_input"><br><br><br>
+
+                    <button type="submit" class="food_btn" onclick="AddDetails()">Add</button>
+				</div>
+			</div>
+		</main>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>
