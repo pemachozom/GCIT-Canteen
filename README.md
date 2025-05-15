@@ -11,6 +11,8 @@ The GCIT Canteen app is a full-stack web application designed for internal campu
 - Placing and tracking orders
 - Admin interface for managing menu items, orders, and users
 
+ ---
+
 📘 This is an **individual coursework project** developed as part of the **Web Programming (ITW101)** module.
 
 ---
